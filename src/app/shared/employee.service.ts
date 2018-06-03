@@ -37,4 +37,9 @@ export class EmployeeService {
     return this.http.put(this.baseURL + `/${ emp._id }`, emp);
   }
 
+  // delete employee from db
+  deleteEmployee(_id: string) {
+    return this.http.delete(this.baseURL +  `/${ _id }`);
+  }
+
 }
